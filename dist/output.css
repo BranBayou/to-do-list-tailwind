@@ -599,6 +599,14 @@ video {
   height: 100%;
 }
 
+.max-h-96 {
+  max-height: 24rem;
+}
+
+.max-h-80 {
+  max-height: 20rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -609,6 +617,18 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-xl {
