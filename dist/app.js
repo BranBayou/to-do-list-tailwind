@@ -11,11 +11,15 @@ function addTodo() {
   } else {
     let radio = document.createElement("radio");
     let li = document.createElement("li");
-    li.classList.add("flex", "justify-between", "my-3", "bg-fuchsia-300", "p-2", "rounded-xl", "text-violet-700");
-    li.innerHTML = `<div class="left"><input class="radio" type="radio" id="checked" name="fav_language" value="">
+    li.classList.add("flex", "justify-between", "items-center","my-3", "bg-fuchsia-300", "p-2", "rounded-xl", "text-violet-700");
+    li.innerHTML = `<div class="left flex items-center gap-2"><span class="material-symbols-outlined">
+    radio_button_unchecked
+    </span>
     ${todo.value}
     </div>
-    <p class="deleteBtn">X</p>`;
+    <span class="material-symbols-outlined">
+delete
+</span>`;
     list.prepend(li);
     todo.value = "";
   }
