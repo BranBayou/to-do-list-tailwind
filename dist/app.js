@@ -17,7 +17,7 @@ function addTodo() {
     </span>
     ${todo.value}
     </div>
-    <span class="material-symbols-outlined">
+    <span class="material-symbols-outlined delete-btn">
 delete
 </span>`;
     list.prepend(li);
@@ -26,3 +26,13 @@ delete
 }
 
 addBtn.addEventListener("click", addTodo); 
+
+
+
+function deleteTodo(e) {
+  if(e.target.tagName === "SPAN") {
+    e.target.parentNode.remove();
+  }
+}
+list.addEventListener("click", deleteTodo);
+
