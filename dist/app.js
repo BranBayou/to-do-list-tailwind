@@ -15,6 +15,9 @@ function addTodo() {
     li.innerHTML = `<div class="left flex items-center gap-2"><span class="material-symbols-outlined">
     radio_button_unchecked
     </span>
+    <span class="material-symbols-outlined hidden">
+radio_button_checked
+</span>
     ${todo.value}
     </div>
     <span class="material-symbols-outlined delete-btn">

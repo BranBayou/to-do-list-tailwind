@@ -1,3 +1,7 @@
 .delete-btn {
   cursor: pointer;
 }
+
+.hidden {
+  display: none;
+}
