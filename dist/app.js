@@ -31,10 +31,12 @@ delete
 addBtn.addEventListener("click", addTodo); 
 
 
-
 function deleteTodo(e) {
-  if(e.target.tagName === "SPAN") {
+  if(e.target.classList.contains('delete-btn')) {
     e.target.parentNode.remove();
+  }
+  if(e.target.classList.contains('left')) {
+    e.target.classList.add('hidden');
   }
 }
 list.addEventListener("click", deleteTodo);
